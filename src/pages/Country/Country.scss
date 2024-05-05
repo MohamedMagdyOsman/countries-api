@@ -1,0 +1,50 @@
+.country-data {
+
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    gap: 100px !important;
+  }
+
+  @media (min-width: 992px) {
+    gap: 300px !important;
+  }
+
+  .country-flag {
+    max-width: 100%;
+    aspect-ratio: 2 / 1;
+    align-self: center;
+    flex: 0.5;
+  }
+  
+  .text {
+    flex-basis: 400px;
+    
+    h3 {
+      font-weight: bold;
+      color: var(--text-color);
+      margin-bottom: 20px;
+    }
+    
+    p {
+      margin-bottom: 5px;
+      color: var(--text-color);
+      
+      span {
+        color: hsl(0, 0%, 52%);
+      }
+    }
+  }
+}
+
+.back-button {
+  background-color: var(--bg-element) !important;
+  border: 0 !important;
+  color: var(--text-color) !important;
+  padding: 7px 30px !important;
+
+  .icon {
+    margin-right: 10px;
+    color: var(--text-color);
+    font-size: 18px;
+  }
+} 

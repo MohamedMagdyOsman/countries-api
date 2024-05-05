@@ -1,0 +1,33 @@
+.search-field {
+  position: relative;
+  
+  .search-icon {
+    color: var(--light-mode-input);
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  input[type='text'] {
+    background-color: var(--bg-element);
+    color: var(--light-mode-input);
+    border: 0;
+    padding: 15px 5px 15px 50px;
+    border-radius: 5px;
+
+    &::placeholder {
+      color: var(--light-mode-input);
+    }
+
+    &:focus-visible {
+      border: 0;
+      outline: 0;
+    }
+
+    @media (min-width: 768px) {
+      width: 300px;
+    }
+  }
+}

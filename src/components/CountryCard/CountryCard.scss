@@ -1,0 +1,36 @@
+.country-card{
+  max-width: 320px;
+  background-color: var(--bg-element) !important;
+  border: 0 !important;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-15px);
+  }
+
+  .card-body {
+    max-width: 100%;
+  }
+
+  .country-image {
+    aspect-ratio: 2 / 1;
+  }
+
+  .country-name {
+    font-weight: bold;
+    color: var(--text-color);
+  }
+
+  .card-text {
+    font-size: 14px;
+    color: var(--text-color);
+
+    span {
+      font-weight: 600;
+      color: hsl(0, 0%, 52%);
+      margin-left: 10px;
+    }
+  }
+}
