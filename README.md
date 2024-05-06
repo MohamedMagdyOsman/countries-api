@@ -32,13 +32,13 @@ git clone <repository-url>
 ```
 2. Navigate to the project directory:
 ```sh
-cd world-countries-react-app
+cd countries-api
 ```
 3. Install dependencies:
 ```sh
 npm install
 ```
-1. Start the development server:
+4. Start the development server:
 ```sh
 npm run dev
 ```
