@@ -1,0 +1,1 @@
+import{j as r}from"./index-CGTVkUse.js";function e(){return r.jsx(r.Fragment,{children:r.jsx("h1",{style:{color:"var(--text-color)",textAlign:"center"},children:"Page not found!"})})}export{e as default};
