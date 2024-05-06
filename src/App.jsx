@@ -12,8 +12,10 @@ function App() {
     <div className="app">
       <Nav />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/country/:name" element={<Country />} />
+        <Route path="/countries-api">
+          <Route exact path="/" element={<Home />} />
+          <Route path="/country/:name" element={<Country />} />
+        </Route>
         <Route path="*" element={<Error />} />
       </Routes>
     </div>

@@ -30,7 +30,7 @@ function Nav() {
   return ( 
     <Navbar className="navbar shadow-sm mb-4">
       <Container>
-        <Navbar.Brand><Link to='/' className="logo">Where in the world?</Link></Navbar.Brand>
+        <Navbar.Brand><Link to='/countries-api/' className="logo">Where in the world?</Link></Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text className="theme-toggle" onClick={themeToggle}>
