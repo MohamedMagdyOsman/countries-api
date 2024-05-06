@@ -14,7 +14,7 @@ function CountryCard({ countryImage, countryImageAlt, countryName, countryPopula
   // use navigate hook
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(`/countries-api/country/${countryName}`)
+    navigate(`/country/${countryName}`)
   }
   
   return (  

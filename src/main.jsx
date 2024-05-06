@@ -14,7 +14,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/countries-api'>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
