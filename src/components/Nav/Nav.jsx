@@ -24,8 +24,8 @@ function Nav() {
   }
 
   useEffect(() => {
-    isDark ? document.body.classList.add('dark') : document.body.classList.remove('dark')
-  })
+    document.body.classList.toggle('dark', isDark);
+  }, [isDark]);
   
   return ( 
     <Navbar className="navbar shadow-sm mb-4">

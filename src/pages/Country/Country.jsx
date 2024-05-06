@@ -20,14 +20,18 @@ function Country() {
 
   useEffect(() => {
     async function getCountryData() {
-      const response = await fetch(
-        `https://restcountries.com/v3.1/name/${encodeURIComponent(
-          name
-        )}?fullText=true`
-      );
-      const data = await response.json();
-
-      setCountryData(data[0]);
+      try {
+        const response = await fetch(
+          `https://restcountries.com/v3.1/name/${encodeURIComponent(
+            name
+          )}?fullText=true`
+        );
+        const data = await response.json();
+  
+        setCountryData(data[0]);
+      } catch (error) {
+        console.error('Error fetching country data:', error);
+      }
     }
 
     getCountryData();
@@ -45,6 +49,7 @@ function Country() {
                 src={countryData.flags.png}
                 alt={countryData.flags.alt}
                 className="country-flag"
+                loading="lazy"
               />
             )}
 

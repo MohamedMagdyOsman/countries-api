@@ -17,6 +17,7 @@ function SearchField({ onChange }) {
         placeholder="Search for a country..."
         className="search-field shadow-sm"
         onChange={onChange}
+        aria-label="Search for a country"
       />
     </div>
   );

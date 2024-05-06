@@ -9,17 +9,17 @@ import Card from 'react-bootstrap/Card';
 // react
 import { useNavigate } from 'react-router-dom';
 
-
 function CountryCard({ countryImage, countryImageAlt, countryName, countryPopulation, countryRegion, countryCapital }) {
   // use navigate hook
   const navigate = useNavigate();
   const handleClick = () => {
     navigate(`/country/${countryName}`)
   }
+
   
   return (  
     <Card className="country-card shadow-sm" onClick={handleClick}>
-      <Card.Img variant="top" src={countryImage} alt={countryImageAlt} className="country-image" />
+      <Card.Img variant="top" src={countryImage} alt={countryImageAlt ?? 'country flag'} className="country-image" loading="lazy" />
       <Card.Body>
         <Card.Title className="country-name my-3">{countryName}</Card.Title>
         <Card.Text>
